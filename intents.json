@@ -1,0 +1,395 @@
+{"intents": [
+
+	{"tag": "bot uncertain",
+	"patterns": ["lol"],
+	"responses0": ["I'm sorry I don't understand you. ", "Sorry but I don't recognize that. ", "I don't know how to answer that. ", "I'm sorry but I don't know how to answer. ", "I'm uncertain how to respond. "],
+	"responses1": ["Would you like to help train me to answer that? ", "Would you consider helping training me to recognize that? ", "Could you help train me to answer that? ", "Would you like to help train me? "], 
+	"responses2": ["If so type (Y) and if not (N)."],
+	"followups": ["Y", "N", "I need help with something else."]
+	},
+
+	{"tag": "something else",
+	"patterns": ["I need something else"],
+	"responses0": ["What other area ", "How else ", "What else "], 
+	"responses1": ["can I assist you", "do you need help with", "can I help you"], 
+	"responses2": ["?", " {}?", " today?"], 
+	"followups": ["I would like to train the bot", "I'm having an issue connecting to the device", "There is another issue I need help with"]
+	},
+
+	{"tag": "other issues",
+	"patterns": ["There is another issue I need help with"],
+	"responses0": ["Needs more spefic responce"], 
+	"responses1": [""], 
+	"responses2": [""], 
+	"followups": [""]
+	},
+
+	{"tag": "connection issue",
+	"patterns": ["I'm having an issue connecting to the device"],
+	"responses0": ["Please check to make certain that the device is online, and then that your phone has connected to the kiddo's blue tooth. If that is still not working please go to settings and select contact us and leave a response for more custom tailored assistance."], 
+	"responses1": [""], 
+	"responses2": [""], 
+	"followups": [""]
+	},
+
+	{"tag": "training",
+	"patterns": ["train", "training", "bot training", "I would like to train the bot"],
+	"responses0": ["First tell me the issue of where I could improve. ", "Start by writing out what area I could improve in. ", "Begin with telling me what you'd like to be improved. "],
+	"responses1": ["Then in the next line tell me what you'd have liked to see.", "In the next line tell me what you were hoping to see.", "After that in the next line type what you hoped to see."], 
+	"responses2": [""],
+	"followups": [""]
+	},
+
+	{"tag": "user searching",
+	"patterns": ["Can you help me find something?"],
+	"responses0": ["What are ", "What is it that you are "], 
+	"responses1": ["looking", "searching", "trying to find"], 
+	"responses2": ["?", " {}?", " today?"], 
+	"followups": ["Where is the policy page?", "Where is the feedback page?", "Where is the contact page?", "How do I edit notifications?", "Where is the help page?"]
+	},
+
+	{"tag": "something else",
+	"patterns": ["I need something else"],
+	"responses0": ["In what other area ", "How else ", "In what other way "], 
+	"responses1": ["can I help you", "may I be of assistance", "may I help"], 
+	"responses2": ["?", " {}?", " today?"], 
+	"followups": ["I'd like to give bot feedback.", "I'm having a hardware problem.", "I'd like to have help with a problem I'm expirencing."]
+	},
+
+	{"tag": "user searching",
+	"patterns": ["I need help finding something"],
+	"responses0": ["What are", "What is it that ", "Can you tell me what are "], 
+	"responses1": ["you looking for ", "", "may I help"], 
+	"responses2": ["?", " {}?", " today?"], 
+	"followups": ["where is the policy page", "where is the feedback page", "where is the contact page", "how do I edit notifications", "where do I see the device policies", "where is the help page"]
+	},
+
+	{"tag": "searching policy page",
+	"patterns": ["where is the policy page"],
+	"responses0": ["The policy page is located under settings in about. This page has the pirvacy policy, license agreement, and terms of service policies all in it for your viewing pleasure!"], 
+	"responses1": [""], 
+	"responses2": [""], 
+	"followups": [""]
+	},
+
+	{"tag": "searching feedback page",
+	"patterns": ["where is the feedback page"],
+	"responses0": ["If you wish to give feedback about the kiddo select rate the kiddo under settings."], 
+	"responses1": [""], 
+	"responses2": [""], 
+	"followups": [""]
+	},
+
+	{"tag": "searching contact page",
+	"patterns": ["where is the contact page"],
+	"responses0": ["If you want help go to the settings page and select contact us."], 
+	"responses1": [""], 
+	"responses2": [""], 
+	"followups": [""]
+	},
+
+	{"tag": "searching edit notifications",
+	"patterns": ["how do I edit notifications"],
+	"responses0": ["If you wish to edit the notifications select settings and go to the notifications page."], 
+	"responses1": [""], 
+	"responses2": [""], 
+	"followups": [""]
+	},
+
+	{"tag": "searching help page",
+	"patterns": ["where is the help page"],
+	"responses0": ["If you need help with anything you can utalize the contact us page under settings."], 
+	"responses1": [""], 
+	"responses2": [""], 
+	"followups": [""]
+	},
+
+	{"tag": "greeting",
+	"patterns": ["hi", "hello rob the bot", "sup rob", "whats up", "good day", "is anyone there", "good morning", "good afternoon", "good evening", "what's new", "hey there", "yo", "hi rob the bot", "sup rob the bot", "hey rob"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need help with a question.", "I want to give feedback.", "I'm new!", "I need help with something else."]
+	},
+
+	{"tag": "greeting_1",
+	"patterns": ["how's it going?", "whats happening", "how do you do", "hi how are you", "good day, how are you", "morning, how are you"],
+	"responses0": ["I'm well", "I'm good", "It's going great"],
+	"responses1": ["! ", ". ", " {}! "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need help with a question.", "Can you show me the most common questions?", "I want to give feedback.", "I'm new!", "I need help with something else."]
+	},
+
+	{"tag": "help",
+	"patterns": ["help", "i need help", "can i have help", "i need assistance", "can i have assistance", "could you lend a hand"],
+	"responses0": ["How may I help", "What do you need help with", "In what way may I be of assistance", "What do you need"],
+	"responses1": [" {}", ""], 
+	"responses2": ["?"],
+	"followups": ["I'm having issues navigating the chatbot.", "I need help with a question.", "I want to give feedback.", "I need help with something else."]
+	},
+
+	{"tag": "goodbye",
+	"patterns": ["goodbye", "bye", "bye bye", "see you later", "so long", "talk to you later", "see you soon", "I've got to get going", "I must be going", "take it easy", "I'm off", "have a nice day", "have a good evening", "have a good night", "have a good morning", "have a good one", "I look forward to our next meeting", "until next time", "take care", "it was nice to see you again", "it was nice seeing you", "goodnight", "later", "catch you later", "peace", "peace out", "I'm out", "I'm out of here", "I gotta hit the road", "I've got to head out", "I need to go", "I need to leave", "thanks, goodbye", "Excellent, goodbye", "thanks for your help, goodbye", "that helped a lot, goodbye", "thanks I've got to go."],
+	"responses0": ["Goodbye", "Have a good day", "Nice talking", "Later", "Talk to you later", "Have a great day", "Bye"],
+	"responses1": ["", " {}"], 
+	"responses2": ["! Message me if you need anything else!", "! If you need any help message me!", "! Hope we can chat again soon!"],
+	"followups": [""]
+	},
+
+	{"tag": "thanking",
+	"patterns": ["Thanks a bunch", "Thanks", "Thank you", "Thanks a bunch", "Thanks a ton", "I really appreciate it", "That's very kind", "I owe you one", "you rock", "I can't thank you enough", "I can't thank you enough", "I'm so grateful for", "I'm so thankful for", "Many thanks for", "I truly appreciate", "Thank you ever so much for", "It's so kind of you to", "I'm grateful for", "I cannot thank you enough for", "I want you to know how much I value", "cannot describe how grateful I am for", "Please accept my deepest thanks for", "Your support is greatly appreciated", "I'd like to express my appreciation for", "thanks rob", "thank you rob"],
+	"responses0": ["Glad it helped", "Happy it helped", "Great to hear that it helped", "Perfect", "Good to hear", "I'm glad that helped", "Nice to hear that helped"],
+	"responses1": ["! ", " {}! ", ". "],  
+	"responses2": [" Anything else?", " How else can I help?", " Do you need anything else?", " Is there something else I can do for you?", " Need anything else?"],
+	"followups": [""]
+	},
+
+	{"tag": "user uncertain",
+	"patterns": ["I'd like to make a complaint", "I'd like to add feedback", "can I give you some feedback", "is there a way for me to complain about something", "I don't understand", "that is the wrong response", "incorrect response", "I don't think that is the right way of saying that", "can you rephrase that", "can you say that in a different way", "please say that again", "can you word that differently", "that is not what I'm looking for", "that is not what I need", "wrong answer", "nope not what I was hoping for", "I don't think I needed to hear that", "that is not the help I needed", "that is not the help I was looking for", "I didn't want you to help me in that way", "nope, not what I wanted", "wrong, that isn't what I was hoping for"],
+	"responses0": ["Would you like to help train me to answer that? ", "Would you consider helping training me to recognize that? ", "Could you help train me to answer that? ", "Would you like to help train me? "], 
+	"responses1": ["If so type (Y) and if not (N)."],
+	"responses2": [""],
+	"followups": [""]
+	},
+
+	{"tag": "add to database later",
+	"patterns": ["N", "n", "(n)", "(N)", "No I don't want to train you", "no I do not want to help train the bot", "I have no interest in training you", "no interest, n", "n, not interested", "no", "not now"],
+	"responses0": ["Okay, ", "Alright, ", "Understood, ", "Got it, "],
+	"responses1": ["maybe later. ", "let me know if you want to at some other point. ", "just let me know if you are intrested later. "], 
+	"responses2": ["Anything else I can help you with?", "Do you need something else?", "What else can I do for you?"],
+	"followups": [""]
+	},
+
+	{"tag": "add to database now",
+	"patterns": ["Y", "y", "(y)", "(Y)"],
+	"responses0": ["First tell me the issue of where I could improve. ", "Start by writing out what area I could improve in. ", "Begin with telling me what you'd like to be improved. "],
+	"responses1": ["Then in the next line tell me what you'd have liked to see.", "In the next line tell me what you were hoping to see.", "After that in the next line type what you hoped to see."], 
+	"responses2": [""],
+	"followups": [""]
+	},
+
+	{"tag": "training done",
+	"patterns": ["Done training you"],
+	"responses0": ["Thanks for helping train me! ", "Thanks for training me! ", "Thanks for the help! ", "Thank you for helping! "],
+	"responses1": ["I'll be sending your feedback in soon. ", "Your feedback will soon be processed. ", "Your feedback will be looked over soon {}. "], 
+	"responses2": ["Is there another way I can help?", "Any other way I can help?", "How else can I help?", "Anything else you need?"],
+	"followups": [""]
+	},
+
+	{"tag": "something else",
+	"patterns": ["I need help something else", "none of these are what I'm looking for", "I wanted something else", "i wanted something different"],
+	"responses0": ["Okay here are some other options ", "Alright, here are some other questions ", "Here are some other questions "],
+	"responses1": ["that might help. ", "which may help. ", "which hopefully will give you what you need. "], 
+	"responses2": ["If you need something else feel free to type it bellow.", "If none of these help you can always type your question bellow.", "You can also type your question bellow and that might help."],
+	"followups": ["I need help with a question.", "I need help.", "I want to give feedback."]
+	},
+
+	{"tag": "Home start",
+	"patterns": ["Home", "home page"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need something else", "Can you help me find something?"]
+	},
+
+	{"tag": "Filler start",
+	"patterns": ["Filler", "fillers"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need something else", "Can you help me find something?"]
+	},
+
+	{"tag": "Alerts start",
+	"patterns": ["Alerts", "alert"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need something else", "Can you help me find something?"]
+	},
+
+	{"tag": "Goals start",
+	"patterns": ["Goals", "goal"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need something else", "Can you help me find something?"]
+	},
+
+	{"tag": "Health start",
+	"patterns": ["Health", "healthy", "my health"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need something else", "Can you help me find something?"]
+	},
+
+	{"tag": "Settings start",
+	"patterns": ["Settings", "setting"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need something else", "Can you help me find something?"]
+	},
+
+	{"tag": "Notifications start",
+	"patterns": ["Notifications", "notification", "notifying"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I have a question related to general notification questions.", "Can you help me with understanding vital alerts?", "Can you help me with understanding device alerts?", "Can you help me with understanding goals?", "Can you help me with understanding geofence?", "Can you help me with understanding kiddo support?", "Can you help me with understanding promotional?", "Can you help me find something?", "I need something else."]
+	},
+
+	{"tag": "Guardians start",
+	"patterns": ["Guardians", "guardian"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need something else", "Can you help me find something?"]
+	},
+
+	{"tag": "Contact Us start",
+	"patterns": ["Contact Us", "contacting you", "contacts", "contact"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need something else", "Can you help me find something?"]
+	},
+
+	{"tag": "Rate the Kiddo start",
+	"patterns": ["Rate the Kiddo", "rating"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need something else", "Can you help me find something?"]
+	},
+
+	{"tag": "About start",
+	"patterns": ["About"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need something else", "Can you help me find something?"]
+	},
+
+	{"tag": "Notifications General",
+	"patterns": ["I have a question related to general notifications."],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["general notification "], 
+	"responses2": ["question?"],
+	"followups": ["Do I need to keep all the notifications on?", "How ought I respond to a notification?", "What are the most important notifications to have on?"]
+	},
+
+	{"tag": "Notifications vital alerts",
+	"patterns": ["Can you help me with understanding vital alerts?"],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["vital alert "], 
+	"responses2": ["question?"],
+	"followups": ["What are vital alerts?", "What information about vital alerts do notifications give me?", "What does turning off vital alerts notifications do?"]
+	},
+
+	{"tag": "Notifications device alerts",
+	"patterns": ["Can you help me with understanding device alerts?"],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["device alert "], 
+	"responses2": ["question?"],
+	"followups": ["What are device alerts?", "What information about device alerts do notifications give me?", "What does turning off device alerts notifications do?"]
+	},
+
+	{"tag": "Notifications goals",
+	"patterns": ["Can you help me with understanding goals?"],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["goals "], 
+	"responses2": ["question?"],
+	"followups": ["What are goals?", "What information about goals do notifications give me?", "What does turning off goals notifications do?"]
+	},
+
+	{"tag": "Notifications geofence",
+	"patterns": ["Can you help me with understanding geofence?"],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["geofence "], 
+	"responses2": ["question?"],
+	"followups": ["What is geofence?", "What information about geofence do notifications give me?", "What does turning off geofence notifications do?"]
+	},
+
+	{"tag": "Notifications kiddo support",
+	"patterns": ["Can you help me with understanding kiddo support?"],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["kiddo support "], 
+	"responses2": ["question?"],
+	"followups": ["What is kiddo support?", "What information about kiddo support do notifications give me?", "What does turning off kiddo support notifications do?"]
+	},
+
+	{"tag": "Notifications promotional",
+	"patterns": ["Can you help me with understanding promotional?"],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["promotional "], 
+	"responses2": ["question?"],
+	"followups": ["What are promotional notifications?", "Are promotional notifications adverticements?", "What does turning off promotional notifications do?"]
+	},
+
+	{"tag": "user searching",
+	"patterns": ["Can you help me find something?"],
+	"responses0": ["What are ", "What is it that you are "], 
+	"responses1": ["looking", "searching", "trying to find"], 
+	"responses2": ["?", " {}?", " today?"], 
+	"followups": ["Where is the policy page?", "Where is the feedback page?", "Where is the contact page?", "How do I edit notifications?", "Where is the help page?"]
+	},
+
+	{"tag": "something else",
+	"patterns": ["I need something else"],
+	"responses0": ["In what other area ", "How else ", "In what other way "], 
+	"responses1": ["can I help you", "may I be of assistance", "may I help"], 
+	"responses2": ["?", " {}?", " today?"], 
+	"followups": ["I'd like to give bot feedback.", "I'm having a hardware problem.", "I'd like to have help with a problem I'm expirencing."]
+	},
+
+	{"tag": "user searching",
+	"patterns": ["I need help finding something"],
+	"responses0": ["What are", "What is it that ", "Can you tell me what are "], 
+	"responses1": ["you looking for ", "", "may I help"], 
+	"responses2": ["?", " {}?", " today?"], 
+	"followups": ["where is the policy page", "where is the feedback page", "where is the contact page", "how do I edit notifications", "where do I see the device policies", "where is the help page"]
+	},
+
+	{"tag": "searching policy page",
+	"patterns": ["where is the policy page"],
+	"responses0": ["The policy page is located under settings in about. This page has the pirvacy policy, license agreement, and terms of service policies all in it for your viewing pleasure!"], 
+	"responses1": [""], 
+	"responses2": [""], 
+	"followups": [""]
+	},
+
+	{"tag": "searching feedback page",
+	"patterns": ["where is the feedback page"],
+	"responses0": ["If you wish to give feedback about the kiddo select rate the kiddo under settings."], 
+	"responses1": [""], 
+	"responses2": [""], 
+	"followups": [""]
+	},
+
+	{"tag": "searching contact page",
+	"patterns": ["where is the contact page"],
+	"responses0": ["If you want help go to the settings page and select contact us."], 
+	"responses1": [""], 
+	"responses2": [""], 
+	"followups": [""]
+	},
+
+	{"tag": "searching edit notifications",
+	"patterns": ["how do I edit notifications"],
+	"responses0": ["If you wish to edit the notifications select settings and go to the notifications page."], 
+	"responses1": [""], 
+	"responses2": [""], 
+	"followups": [""]
+	},
+
+	{"tag": "searching help page",
+	"patterns": ["where is the help page"],
+	"responses0": ["If you need help with anything you can utalize the contact us page under settings."], 
+	"responses1": [""], 
+	"responses2": [""], 
+	"followups": [""]
+	}
+
+]} 
